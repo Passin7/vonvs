@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title> Here is the another night working</title>
+    
+             <style>
+                /**!--body {
+       
+                   position: relative;
+                   color: chartreuse;
+                } **/
+               p{
+                   size: 35px;
+               }
+               h2{
+                   font-style: normal;
+                   font-size: medium;
+
+               }
+               body{
+                   background-color: whitesmoke;
+               }
+               .time{                                                                                                                                                                                                      
+                width: 15em;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+               }
+
+            </style>
+     </head>
+ 
+     <body>
+        <!----
+        <video id="player" controls autoplay></video>
+        <button id="capture">Capture</button>
+        <canvas id="canvas" width=320 height=240></canvas>
+        <script>
+          const player = document.getElementById('player');
+          const canvas = document.getElementById('canvas');
+          const context = canvas.getContext('2d');
+          const captureButton = document.getElementById('capture');
+        
+          const constraints = {
+            video: true,
+          };
+        
+          captureButton.addEventListener('click', () => {
+            // Draw the video frame to the canvas.
+            context.drawImage(player, 0, 0, canvas.width, canvas.height);
+          });
+        
+          // Attach the video stream to the video element and autoplay.
+          navigator.mediaDevices.getUserMedia(constraints)
+            .then((stream) => {
+              player.srcObject = stream;
+            });
+        </script>-->
+         <div class="time">
+         <p> Hello Here you can check the time !</p>
+         <h2 id="tiktok"></h2>
+        </div>
+         <!--<input type="file" accept="image/*" capture> -->
+
+         <script>
+             var feb = new Date();
+         document.getElementById("tiktok").innerHTML = feb;
+        </script>
+   
+         
+     </body>
+</html>
